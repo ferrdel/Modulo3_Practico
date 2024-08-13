@@ -17,16 +17,25 @@ Se necesita saber ahora quién registró las temperaturas en qué día, sabiendo
 Deberás definir una clase llamada RegistroTemperatura, que contendrá la información de un registro de temperatura. Esta clase será usada ahora en la matriz. Estas podrían ser algunas properties:
 
 -- Temperatura registrada
+
 -- Persona de Turno
+
 -- Fecha de registro
+
 -- Hora de registro
 
 Las colecciones deben ir en una clase llamada EstacionMeteorologica, con los siguientes métodos:
 
 -- Un método llamado RegistrarTemperatura, que recibirá un objeto de tipo RegistroDemperatura, para ser almacenado en la matriz.
+
 -- Un método VerTemperaturas, con parámetro para elegir qué colección ver. Este método puede devolver sólo las temperaturas.
+
 -- Utiliza el constructor para la carga inicial de la matriz, si usaste carga automática.
+
 -- Utiliza un método de carga para la matriz, si le pediste al usuario que cargue manualmente.
+
 -- Puedes agregar algunas funciones anteriores como métodos de esta clase, como por ejemplo "Ver temperatura de un día específico". Tu eliges las que creas conveniente que pueden ir en esta clase.
+
 -- Recuerda que ahora la matriz ya no es de tipo int, sino que almacena objetos de la clase nueva Registro! Modificalo!
+
 Algunas funciones de cálculo de tu programa pueden ir en una clase estática, de nombre CalculoTemperaturas. Añade las funciones que creas convenientes que están relacionadas a algún tipo de cálculo del programa, como por ejemplo, CalcularTemperaturaPromedio o similares. Solo recuerda que estos métodos harán cálculo sobre algún parámetro que reciban de tipo de la colección seguramente. Puedes hacer uso de esta clase en EstaciónMeteorológica si así lo deseas, o bien dejarme a mi que la utilice si se te complica relacionarlas. Recuerda que esta clase será estática y la de estación no.
