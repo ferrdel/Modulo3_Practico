@@ -15,11 +15,14 @@ Bien, ahora vamos con los requerimientos (algunos nuevos!):
 Requerimientos:
 Se necesita saber ahora quién registró las temperaturas en qué día, sabiendo que en la estación está una persona presente en todo momento, pero esa persona puede ser un Profesional o bien un Pasante. No tienen mucha diferencias salvo que el pasante tiene un Número de Legajo, y el profesional tiene un Número de Matrícula que lo habilita. En total debería haber 3 pasantes y 3 profesionales, cubriendo turnos de 8 horas, y siempre intercalando Pasante-Profesional. Define las clases que creas necesario con sus respectivas properties. No es necesario que tenga métodos.
 Deberás definir una clase llamada RegistroTemperatura, que contendrá la información de un registro de temperatura. Esta clase será usada ahora en la matriz. Estas podrían ser algunas properties:
+
 -- Temperatura registrada
 -- Persona de Turno
 -- Fecha de registro
 -- Hora de registro
+
 Las colecciones deben ir en una clase llamada EstacionMeteorologica, con los siguientes métodos:
+
 -- Un método llamado RegistrarTemperatura, que recibirá un objeto de tipo RegistroDemperatura, para ser almacenado en la matriz.
 -- Un método VerTemperaturas, con parámetro para elegir qué colección ver. Este método puede devolver sólo las temperaturas.
 -- Utiliza el constructor para la carga inicial de la matriz, si usaste carga automática.
