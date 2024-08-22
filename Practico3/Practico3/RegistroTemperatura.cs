@@ -8,45 +8,25 @@ namespace Practico3
 {
     public class RegistroTemperatura
     {
-        private string _tempeRegistrada;
-        private DateTime _fechaRegistro;
-        private DateTime _hraRegistro;
-        private Persona _personaTurno;
+        public int _tempeRegistrada { get; set; }
+        public DateTime _fechaRegistro { get; set; }
+        public DateTime _hraRegistro { get; set; }
+        public Profesional _profesionalTurno { get; set; }
+        public Pasante _pasanteTurno { get; set; }
 
-        public RegistroTemperatura(string tempRegistrada, DateTime fechaRegistro, DateTime hraRegistro, Persona personaTurno)
+        public RegistroTemperatura(int tempRegistrada, DateTime fechaRegistro, DateTime hraRegistro, Profesional profTurno,Pasante pasanteTurno)
         {
             this._tempeRegistrada = tempRegistrada;
             this._fechaRegistro = fechaRegistro;
             this._hraRegistro = hraRegistro;
-            this._personaTurno = personaTurno;
+            this._profesionalTurno = profTurno;
+            this._pasanteTurno = pasanteTurno;
         }
 
-        public string TemperaturaRegistrada
-        {
-            get { return _tempeRegistrada; }
-            set { _tempeRegistrada = value; }
-        }
-        public DateTime FechaRegistro
-        {
-            get { return _fechaRegistro; }
-            set { _fechaRegistro = value; }
-        }
-        public DateTime HraRegistro
-        {
-            get { return _hraRegistro; }
-            set { _hraRegistro = value; }
-        }
-
-        public Persona PersonaTurno
-        {
-            get { return _personaTurno; }
-            set { _personaTurno = value; }
-        }
 
         public void VerRegistroTemperatura()
         {
-
-
+            Console.WriteLine($"Temperatura Registrada: {_tempeRegistrada}, Fecha Registro: {_fechaRegistro}, Hra Registro: {_hraRegistro}, Empleado: {_pasanteTurno._nroLegajo}");
         }
     }
 }

@@ -13,17 +13,16 @@ namespace Practico3
         private int dni_p;
         private int edad_p;
         private string genero_p;
-        private int telefono_p;
+        private string telefono_p;
         private string turno_p;
 
-        public Persona(string nombre, string apellido, int dni, int edad, string genero, int telefono, string turno)
+        public Persona(string nombre, string apellido, int dni, int edad, string genero, string telefono, string turno)
         {
             //Inicialización de los atributos de la clase Persona
             this.nombre_p = nombre;
             this.apellido_p = apellido;
             this.dni_p = dni;
             this.edad_p = edad;
-            this.genero_p = genero;
             this.genero_p = genero;
             this.telefono_p = telefono;
             this.turno_p = turno;
@@ -56,7 +55,7 @@ namespace Practico3
             get { return genero_p; }
             set { genero_p = value; }
         }
-        public int Telefono
+        public string Telefono
         {
             get { return telefono_p; }
             set { telefono_p = value; }
@@ -69,12 +68,13 @@ namespace Practico3
 
         public void VerInfoPersona()
         {
-
+            Console.WriteLine($"Nombre: {nombre_p}, Apellido: {apellido_p}, Edad: {edad_p}, DNI: {dni_p}, Genero: {genero_p}, Telefono: {telefono_p} ");
         }
 
         public string TurnoAsignado()
         {
             return turno_p;
         }
+
     }
 }
