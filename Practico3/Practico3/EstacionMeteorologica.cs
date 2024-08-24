@@ -8,15 +8,14 @@ namespace Practico3
 {
     public class EstacionMeteorologica
     {
-        //private double[] temperaturas;
         public List<RegistroTemperatura> Temperaturas { get; set; }
 
-        private List<RegistroTemperatura> TemperaUmbral { get; set; }
+        private List<RegistroTemperatura> TemperaUmbral = new List<RegistroTemperatura>();
 
-        // Constructor que realiza la carga automática de la matriz
-        public EstacionMeteorologica(RegistroTemperatura registro)
+        // Constructor 
+        public EstacionMeteorologica()
         {
-            this.Temperaturas.Add(registro);
+            this.Temperaturas = new List<RegistroTemperatura>();
         }
 
         public void RegistrarTemperatura(RegistroTemperatura registro)
@@ -29,7 +28,7 @@ namespace Practico3
         {
             for (int i = 0; i < Temperaturas.Count; i++)
             {
-                Temperaturas[i]?.VerRegistroTemperatura();
+                Temperaturas[i].VerRegistroTemperatura();
                 Console.WriteLine("\n");
             }
         }
@@ -42,7 +41,7 @@ namespace Practico3
             for (int i = 0; i < Temperaturas.Count; i++)
             {
                 sumTemp += Temperaturas[i]._tempeRegistrada;
-                
+
             }
 
             tempMesProm = sumTemp / Temperaturas.Count;
@@ -70,7 +69,7 @@ namespace Practico3
 
             for (int i = 0; i < Temperaturas.Count; i++)
             {
-                if (Temperaturas[i]._tempeRegistrada < tempMin) 
+                if (Temperaturas[i]._tempeRegistrada < tempMin)
                 {
                     tempMin = Temperaturas[i]._tempeRegistrada;
                 }
@@ -78,8 +77,9 @@ namespace Practico3
             Console.WriteLine($"\nLa temperatura Minima del Mes es: {tempMin}");
         }
 
-        void TemperaturaMasUmbral()
+        public void TemperaturaMasUmbral()
         {
+
             for (int i = 0; i < Temperaturas.Count; i++)
             {
                 if (Temperaturas[i]._tempeRegistrada > 20)
@@ -89,18 +89,18 @@ namespace Practico3
             }
 
 
-            Console.WriteLine("\nLas Temperaturas por encima de un umbral (20°) son...\n");
+            Console.WriteLine("\nLas Temperaturas por encima de un umbral (20°) son... ");
             foreach (var valor in TemperaUmbral)
             {
-                Console.Write($" {valor}");
+                Console.WriteLine($"\nTemperaruta: {valor._tempeRegistrada} ");
             }
-
+            Console.Write("\n");
         }
 
-        void TemperaturaUnDia()
+        public void TemperaturaUnDia()
         {
             int tempActual = 0;
-            
+
 
             Console.Write("\n-- Ingrese la fecha del mes que quiere saber la temperatura... ");
             DateTime diaMes = Convert.ToDateTime(Console.ReadLine());
