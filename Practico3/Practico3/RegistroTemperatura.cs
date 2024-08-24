@@ -26,7 +26,7 @@ namespace Practico3
 
         public void VerRegistroTemperatura()
         {
-            Console.WriteLine($"Temperatura Registrada: {_tempeRegistrada}, Fecha Registro: {_fechaRegistro}, Hra Registro: {_hraRegistro}, Empleado: {_pasanteTurno._nroLegajo}");
+            Console.WriteLine($"\nTemperatura Registrada: {_tempeRegistrada}, Fecha Registro: {_fechaRegistro.ToShortDateString()}, Hra Registro: {_hraRegistro.ToShortTimeString()}, Empleado: {_pasanteTurno._nroLegajo}");
         }
     }
 }

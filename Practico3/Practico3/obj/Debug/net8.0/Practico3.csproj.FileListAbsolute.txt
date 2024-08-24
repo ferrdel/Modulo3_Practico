@@ -1,0 +1,12 @@
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\bin\Debug\net8.0\Practico3.deps.json
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\bin\Debug\net8.0\Practico3.dll
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\bin\Debug\net8.0\Practico3.pdb
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\Practico3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\Practico3.AssemblyInfoInputs.cache
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\Practico3.AssemblyInfo.cs
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\Practico3.csproj.CoreCompileInputs.cache
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\Practico3.sourcelink.json
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\Practico3.dll
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\refint\Practico3.dll
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\Practico3.pdb
+C:\Users\ferrd\Documents\Devlights\NET\Practico3\Practico3\Practico3\obj\Debug\net8.0\ref\Practico3.dll
